@@ -8,4 +8,6 @@ redirect_from:
   - /about.html
 ---
 
+I'm an undergraduate from School of EECS, Peking University. My research interest includes brain-inspired computation, machine learning and interpretability.
 
+I'm very fortunate to be advised by Prof. Guozhang Chen from School of Computer Science, Peking University.
