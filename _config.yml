@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "Tong Wu / Personal Homepage"
 title_separator          : "-"
 name                     : &name "Tong Wu"
-description              : &description "An undergraduate interested in RNNs and SSMs"
+description              : &description "Peking University undergraduate exploring VLA, large model reasoning, and long-context reasoning"
 url                      : https://misiote.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "misiote/misiote.github.io"
@@ -25,9 +25,9 @@ author:
   avatar           : "profile.png"
   name             : "Tong Wu"
   pronouns         : "he/him"  
-  bio              : "An undergraduate interested in RNNs and SSMs"
+  bio              : "Peking University undergraduate working on VLA, large model reasoning, and long-context reasoning"
   location         : "Beijing, China"
-  employer         :
+  employer         : "Peking University"
   uri              : 
   email            : dtpkuwt@stu.pku.edu.cn
 
