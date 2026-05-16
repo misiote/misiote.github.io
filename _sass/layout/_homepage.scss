@@ -299,6 +299,12 @@ a:hover {
   padding: 1.25rem;
 }
 
+@media (min-width: 1024px) {
+  .sidebar {
+    max-width: 320px;
+  }
+}
+
 .author__avatar img {
   border-radius: 20px;
   border: 1px solid rgba(98, 243, 255, 0.3) !important;
@@ -322,6 +328,14 @@ a:hover {
 .author__urls i,
 .sidebar .author__desktop {
   color: #bdd6ff;
+}
+
+.author__urls li,
+.author__urls a,
+.sidebar .author__desktop {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .btn {
