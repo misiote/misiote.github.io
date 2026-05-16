@@ -28,7 +28,8 @@ html {
 body {
   position: relative;
   overflow-x: hidden;
-  font-family: "Rajdhani", "Segoe UI", sans-serif;
+  font-family: "Source Sans 3", "Segoe UI", sans-serif;
+  line-height: 1.72;
   background:
     radial-gradient(circle at top left, rgba(98, 243, 255, 0.18), transparent 22%),
     radial-gradient(circle at 80% 0%, rgba(255, 75, 209, 0.16), transparent 20%),
@@ -68,9 +69,8 @@ h6,
 .archive__item-title,
 .author__name,
 .masthead__menu-item {
-  font-family: "Orbitron", "Rajdhani", sans-serif;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  font-family: "IBM Plex Sans", "Source Sans 3", sans-serif;
+  letter-spacing: 0.01em;
 }
 
 a {
@@ -92,8 +92,17 @@ a:hover {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
+.masthead__inner-wrap {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+
 .greedy-nav {
   background: transparent;
+}
+
+.greedy-nav a {
+  font-size: 0.96rem;
 }
 
 .greedy-nav a,
@@ -147,14 +156,14 @@ a:hover {
 .page__hero--overlay .wrapper {
   position: relative;
   z-index: 1;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 3.5rem;
+  padding-bottom: 3.25rem;
 }
 
 .page__hero--overlay .page__title {
   max-width: 11ch;
-  font-size: clamp(3rem, 8vw, 5.6rem);
-  line-height: 0.95;
+  font-size: clamp(2.7rem, 7vw, 4.9rem);
+  line-height: 0.98;
   color: #f5fdff;
   text-shadow:
     0 0 18px rgba(98, 243, 255, 0.22),
@@ -163,7 +172,8 @@ a:hover {
 
 .page__lead {
   max-width: 48rem;
-  font-size: 1.18rem;
+  font-size: 1.08rem;
+  line-height: 1.75;
   color: rgba(229, 251, 255, 0.82);
 }
 
@@ -196,8 +206,8 @@ a:hover {
   border: 1px solid rgba(98, 243, 255, 0.16);
   box-shadow:
     0 0 0 1px rgba(98, 243, 255, 0.06) inset,
-    0 18px 50px rgba(0, 0, 0, 0.38),
-    0 0 30px rgba(98, 243, 255, 0.08);
+    0 14px 34px rgba(0, 0, 0, 0.34),
+    0 0 20px rgba(98, 243, 255, 0.06);
 }
 
 .page__inner-wrap,
@@ -214,7 +224,8 @@ a:hover {
 
 .archive,
 .page__inner-wrap {
-  padding: 1.5rem;
+  padding: 1.75rem;
+  max-width: 72rem;
 }
 
 .list__item {
@@ -246,8 +257,36 @@ a:hover {
 .author__urls li,
 .home-footer-note,
 .home-card-note {
-  font-size: 1.04rem;
+  font-size: 1.02rem;
+  line-height: 1.8;
   color: #a8b9de;
+}
+
+.page__content {
+  display: grid;
+  gap: 1.6rem;
+}
+
+.page__content h2,
+.page__content h3,
+.archive__item-title {
+  line-height: 1.22;
+}
+
+.page__content h2 {
+  margin-top: 0.4rem;
+  margin-bottom: 1rem;
+  font-size: clamp(1.7rem, 3vw, 2.2rem);
+}
+
+.page__content h3 {
+  margin-bottom: 0.75rem;
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+}
+
+.page__content ul,
+.page__content ol {
+  padding-left: 1.2rem;
 }
 
 .page__date,
@@ -286,11 +325,11 @@ a:hover {
 }
 
 .btn {
-  padding: 0.62em 1.2em;
+  padding: 0.72em 1.2em;
   color: #06101f !important;
-  font-family: "Orbitron", "Rajdhani", sans-serif;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  font-family: "IBM Plex Sans", "Source Sans 3", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.03em;
   background: linear-gradient(90deg, #62f3ff, #5eb5ff);
   border: 1px solid rgba(98, 243, 255, 0.42) !important;
   border-radius: 999px;
@@ -321,7 +360,7 @@ a:hover {
 
 .splash .page__content {
   display: grid;
-  gap: 2rem;
+  gap: 1.75rem;
 }
 
 .home-hero-panel,
@@ -333,7 +372,7 @@ a:hover {
 
 .home-hero-panel {
   display: grid;
-  gap: 1.5rem;
+  gap: 1.25rem;
   grid-template-columns: 1.45fr 1fr;
   align-items: stretch;
 }
@@ -357,7 +396,7 @@ a:hover {
 }
 
 .home-hero-copy {
-  padding: 2rem;
+  padding: 1.8rem;
 }
 
 .home-kicker,
@@ -366,11 +405,11 @@ a:hover {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  margin-bottom: 0.85rem;
+  margin-bottom: 0.75rem;
   color: var(--cyber-cyan);
-  font-size: 0.88rem;
+  font-size: 0.78rem;
   font-weight: 700;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   text-shadow: 0 0 16px rgba(98, 243, 255, 0.18);
 }
@@ -383,15 +422,16 @@ a:hover {
 }
 
 .home-hero-copy h2 {
-  font-size: clamp(2.25rem, 4vw, 3.65rem);
-  line-height: 0.96;
+  margin-bottom: 0.9rem;
+  font-size: clamp(2.1rem, 3.8vw, 3.1rem);
+  line-height: 1.02;
 }
 
 .home-cta-row {
   display: flex;
   flex-wrap: wrap;
   gap: 0.85rem;
-  margin-top: 1.5rem;
+  margin-top: 1.25rem;
 }
 
 .home-hero-meta {
@@ -404,7 +444,7 @@ a:hover {
 .home-glass-card {
   position: relative;
   overflow: hidden;
-  padding: 1.4rem;
+  padding: 1.25rem;
   border-radius: 24px;
   background: linear-gradient(180deg, rgba(12, 18, 40, 0.96), rgba(13, 22, 50, 0.88));
   color: #f3f8ff;
@@ -416,8 +456,8 @@ a:hover {
 
 .home-card-value {
   margin: 0;
-  font-family: "Orbitron", "Rajdhani", sans-serif;
-  font-size: 2rem;
+  font-family: "IBM Plex Sans", "Source Sans 3", sans-serif;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #f7fdff;
 }
@@ -455,8 +495,19 @@ a:hover {
 
 .home-grid-section {
   display: grid;
-  gap: 1.5rem;
+  gap: 1.25rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.home-panel-stack {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.home-timeline-list {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 1rem;
 }
 
 .home-grid-section--three {
@@ -464,7 +515,7 @@ a:hover {
 }
 
 .home-panel {
-  padding: 1.75rem;
+  padding: 1.5rem;
 }
 
 .home-panel--compact p:last-child,
@@ -473,12 +524,35 @@ a:hover {
   margin-bottom: 0;
 }
 
+.home-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.home-tag {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.35rem;
+  padding: 0.45rem 0.9rem;
+  color: #e7fbff;
+  font-family: "IBM Plex Sans", "Source Sans 3", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: rgba(12, 18, 40, 0.82);
+  border: 1px solid rgba(98, 243, 255, 0.22);
+  border-radius: 999px;
+  box-shadow: inset 0 0 16px rgba(98, 243, 255, 0.06);
+}
+
 .home-highlight-band {
   display: flex;
   gap: 1rem;
   align-items: end;
   justify-content: space-between;
-  padding: 1.8rem;
+  padding: 1.55rem;
   background:
     linear-gradient(135deg, rgba(8, 12, 28, 0.98), rgba(21, 15, 52, 0.96)),
     linear-gradient(90deg, rgba(98, 243, 255, 0.06), rgba(255, 75, 209, 0.04));
@@ -510,7 +584,7 @@ a:hover {
 }
 
 .home-footer-note {
-  padding: 0.5rem 0 1rem;
+  padding: 0.2rem 0 0.8rem;
   color: #90a4d6;
 }
 

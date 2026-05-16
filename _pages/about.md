@@ -17,11 +17,11 @@ redirect_from:
     <h2>Researching the next interface between perception, action, and reasoning.</h2>
     <p>
       I am an undergraduate at Peking University, majoring in Intelligent Science and Technology.
-      My current interests center on VLA, large model reasoning, and long-context reasoning.
-      I am also very fortunate to be advised by Prof. Guozhang Chen from the School of Computer Science, Peking University.
+      My work spans embodied intelligence, VLA efficiency, large model reasoning, and long-context systems.
+      I am currently a research intern in Prof. Guozhang Chen's lab, where I work on efficient VLA pipelines and related multimodal systems.
     </p>
     <div class="home-cta-row">
-      <a class="btn btn--primary" href="mailto:dtpkuwt@stu.pku.edu.cn">Contact Me</a>
+      <a class="btn btn--primary" href="mailto:misiotewu@gmail.com">Contact Me</a>
       <a class="btn btn--inverse" href="/publications/">View Publications</a>
       <a class="btn btn--light-outline" href="/cv/">Open CV</a>
     </div>
@@ -40,7 +40,7 @@ redirect_from:
     <div class="home-glass-card home-glass-card--accent">
       <p class="home-card-label">Current Status</p>
       <p class="home-card-value">B.S. Student</p>
-      <p class="home-card-note">Beijing, China</p>
+      <p class="home-card-note">Peking University · Beijing</p>
     </div>
   </div>
 </section>
@@ -51,8 +51,8 @@ redirect_from:
     <h3>What I work on</h3>
     <p>
       I am interested in building intelligent systems that can perceive rich environments,
-      reason over long horizons, and make grounded decisions. My current reading and project work
-      focus on multimodal reasoning pipelines, efficient long-context modeling, and inference-time behavior in large models.
+      reason over long horizons, and make grounded decisions. My recent projects focus on agentic e-commerce assistants,
+      efficient VLA action generation, multimodal dataset construction, and inference-time reasoning behavior in large models.
     </p>
   </article>
 
@@ -63,7 +63,40 @@ redirect_from:
       <span class="home-timeline-dot"></span>
       <div>
         <strong>Peking University</strong>
-        <p>Bachelor's degree in Intelligent Science and Technology</p>
+        <p>Undergraduate in Intelligence Science · Aug 2023 to Present</p>
+      </div>
+    </div>
+  </article>
+</section>
+
+<section class="home-panel-stack">
+  <article class="home-panel">
+    <p class="home-section-tag">Research Experience</p>
+    <h3>What I am building now</h3>
+    <div class="home-timeline-list">
+      <div class="home-timeline-item">
+        <span class="home-timeline-dot"></span>
+        <div>
+          <strong>Agentic E-commerce Assistant with Function Calling</strong>
+          <p>Joint University-Enterprise Innovation Workstation Project · May 2025 to May 2026</p>
+          <p>Building an end-to-end LLM agent post-training pipeline with SFT and RL, long-term memory, benchmark expansion, and reward-stabilized data construction.</p>
+        </div>
+      </div>
+      <div class="home-timeline-item">
+        <span class="home-timeline-dot"></span>
+        <div>
+          <strong>Research Intern at Prof. Chen's Lab</strong>
+          <p>Peking University · Feb 2025 to Present</p>
+          <p>Worked on spike camera data collection for SpikeStereoNet and now focus on efficient VLA systems with conditional SSM-based action denoising and distillation.</p>
+        </div>
+      </div>
+      <div class="home-timeline-item">
+        <span class="home-timeline-dot"></span>
+        <div>
+          <strong>TerraVerse Collaborator</strong>
+          <p>TarraVerse Group · Dec 2025 to Feb 2026</p>
+          <p>Contributed to terrain-centric multimodal data construction for TerraVerse, including collection, cleaning, annotation, and scalable quality filtering.</p>
+        </div>
       </div>
     </div>
   </article>
@@ -84,24 +117,24 @@ redirect_from:
 <section class="home-grid-section home-grid-section--three">
   <article class="home-panel home-panel--compact">
     <p class="home-section-tag">Direction 01</p>
-    <h3>VLA</h3>
-    <p>Bridging vision, language, and action to build agents that can understand scenes and execute grounded behavior.</p>
+    <h3>Embodied Intelligence</h3>
+    <p>Designing systems that connect multimodal perception, action generation, and decision-making under real-world constraints.</p>
   </article>
 
   <article class="home-panel home-panel--compact">
     <p class="home-section-tag">Direction 02</p>
-    <h3>LLM Reasoning</h3>
-    <p>Studying inference-time reasoning behavior, chain construction, and how large models turn latent knowledge into reliable decisions.</p>
+    <h3>Cognitive Architectures</h3>
+    <p>Exploring memory, tool use, and structured control mechanisms that improve reliability and long-horizon capability in LLM systems.</p>
   </article>
 
   <article class="home-panel home-panel--compact">
     <p class="home-section-tag">Direction 03</p>
-    <h3>Long Context</h3>
-    <p>Exploring memory mechanisms, retrieval strategies, and scalable context handling for sustained multi-step reasoning.</p>
+    <h3>Interpretability</h3>
+    <p>Studying model reasoning traces, efficiency tradeoffs, and mechanism-level understanding for safer and more controllable AI systems.</p>
   </article>
 </section>
 
 <section class="home-footer-note">
-  <p>I am actively shaping this site into a living record of projects, papers, and research notes.</p>
-  <p>If you want, I can next help you add a real profile photo, publication metadata, project cards, and links to Scholar or LinkedIn.</p>
+  <p>Outside research, I enjoy cue sports, molecular gastronomy, karaoke, and learning Cantonese and Japanese through music.</p>
+  <p>This site is becoming a living record of my papers, projects, datasets, and research notes.</p>
 </section>
