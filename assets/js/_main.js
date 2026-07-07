@@ -2,9 +2,54 @@
    jQuery plugin settings and other scripts
    ========================================================================== */
 
+(function () {
+  const storageKey = "misiote-site-theme";
+  const root = document.documentElement;
+
+  function resolveInitialTheme() {
+    try {
+      const stored = window.localStorage.getItem(storageKey);
+      if (stored === "day" || stored === "night") {
+        return stored;
+      }
+    } catch (error) {
+      // Ignore storage access failures and fall back to the system preference.
+    }
+
+    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "night" : "day";
+  }
+
+  root.setAttribute("data-theme", resolveInitialTheme());
+})();
+
 $(document).ready(function () {
   // These should be the same as the settings in _variables.scss
   const scssLarge = 925; // pixels
+  const themeStorageKey = "misiote-site-theme";
+
+  function applySiteTheme(theme) {
+    const nextTheme = theme === "night" ? "night" : "day";
+    document.documentElement.setAttribute("data-theme", nextTheme);
+
+    $("[data-theme-toggle]").each(function () {
+      const isNight = nextTheme === "night";
+      $(this).attr("aria-pressed", isNight ? "true" : "false");
+      $(this).find(".theme-toggle__label").text(isNight ? "Day mode" : "Night mode");
+    });
+
+    try {
+      window.localStorage.setItem(themeStorageKey, nextTheme);
+    } catch (error) {
+      // Ignore storage access failures after applying the theme.
+    }
+  }
+
+  $("[data-theme-toggle]").on("click", function () {
+    const currentTheme = document.documentElement.getAttribute("data-theme") === "night" ? "night" : "day";
+    applySiteTheme(currentTheme === "night" ? "day" : "night");
+  });
+
+  applySiteTheme(document.documentElement.getAttribute("data-theme"));
 
   // Sticky footer
   var bumpIt = function () {
