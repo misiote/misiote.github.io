@@ -11,3 +11,13 @@ Gemfile.lock
 # Ingore files created by npm
 node_modules
 package-lock.json
+pnpm-lock.yaml
+
+# Ignore local Post Studio tooling, build artifacts, and logs
+.post-studio/
+tools/post-studio/
+tools/post-studio-macos/
+scripts/build-post-studio-macos-app.sh
+scripts/start-post-studio-macos.sh
+start-post-studio*.bat
+stop-post-studio.bat

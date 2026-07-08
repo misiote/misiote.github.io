@@ -24,17 +24,9 @@
     "node": ">= 0.10.0"
   },
   "dependencies": {
-    "express": "^4.21.2",
     "fitvids": "^2.1.1",
-    "gray-matter": "^4.0.3",
-    "js-yaml": "^4.1.0",
     "jquery": "^3.7.1",
     "jquery-smooth-scroll": "^2.2.0",
-    "katex": "^0.16.22",
-    "markdown-it": "^14.1.0",
-    "markdown-it-attrs": "^4.3.1",
-    "markdown-it-footnote": "^4.0.0",
-    "markdown-it-texmath": "^1.0.0",
     "magnific-popup": "^1.2.0"
   },
   "devDependencies": {
@@ -42,7 +34,6 @@
     "uglify-js": "^3.17.4"
   },
   "scripts": {
-    "post-studio": "node tools/post-studio/server.js",
     "uglify": "uglifyjs node_modules/jquery/dist/jquery.min.js node_modules/fitvids/dist/fitvids.min.js node_modules/magnific-popup/dist/jquery.magnific-popup.min.js node_modules/jquery-smooth-scroll/jquery.smooth-scroll.min.js assets/js/plugins/jquery.greedy-navigation.js assets/js/_main.js -c -m -o assets/js/main.min.js",
     "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build:js",
     "build:js": "npm run uglify"
